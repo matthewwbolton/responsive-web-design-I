@@ -75,7 +75,7 @@ nav {
 
 
 .links {
-    width: 80%;
+	width: 100%;
 	display: flex;
 	color: grey;
 	justify-content: space-evenly;
@@ -365,9 +365,69 @@ ul {
 }
 
 @media (max-width: 800px){
+	nav{
+		display:flex;
+		flex-direction: column-reverse;
+	}
+
+	.links{
+		display: flex;
+    	color: grey;
+    	justify-content: space-evenly;
+    	align-items: center;
+	}
+
+	header{
+		display: flex;
+		justify-content: center;
+	}
+
+	.logo-header{
+		display: none;
+	}
+
+	.bottom-content{
+		display: flex;
+    	justify-content: center
+	}
+	
 
 }
 
 @media (max-width: 500px){
+	.links{
+		flex-direction: column;
+    	align-items: center;
+	}
 
+	.top-content{
+		display: flex;
+    	align-items: center;
+    	flex-direction: column;
+    	justify-content: center
+	}
+
+	.features{
+		width: 100%;
+	}
+
+	.about{
+		width: 100%;
+	}
+
+	.bottom-content{
+		flex-direction: column;
+	}
+
+	.services{
+		width: 100%
+	}
+
+	.product{
+		width: 100%;
+	}
+
+	.vision{
+		width: 100%;
+	}
 }
