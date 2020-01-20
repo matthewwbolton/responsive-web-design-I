@@ -49,7 +49,8 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-	box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid red;
 }
 
 html, body {
@@ -63,14 +64,19 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
+.container {
+    max-width: 100%;
+}
+
 nav {
-	display: flex;
+    display: flex;
+    justify-content: flex-end;
 }
 
 
 .links {
+    width: 80%;
 	display: flex;
-	width: 70%;
 	color: grey;
 	justify-content: space-evenly;
 	align-items: center;
@@ -80,7 +86,6 @@ nav {
 }
 
 .logo-nav {
-	width: 15%;
 	text-align: center;
 }
 
@@ -119,19 +124,19 @@ button {
 }
 
 .features{
-	width: 35%;
+	width: 48%;
 	margin: 2%;
 }
 
 .about{
-	width: 35%;
+	width: 48%;
 	margin: 2%;
 }
 
 .middle-img {
-	display: flex;
-    justify-content: flex-end;
-	width: 80%;
+	width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .bottom-content {
@@ -140,35 +145,36 @@ button {
 }
 
 .services{
-	width: 25%;
-	padding: 4%;
+	width: 35%;
+	margin: 1%;
 }
 
 .product {
-	width: 25%;
-	padding: 4%;
+	width: 35%;
+	margin: 1%;
 }
 
 .vision {
-	width: 25%;
-	padding: 4%;
+	width: 35%;
+	margin: 1%;
+}
+
+.contact {
+    display: flex;
 }
 
 .contact-div {
-	width: 140px;
-	margin-left: 16%;
-	
+	margin: 1%;
 }
 
 footer {
 	display: flex;
-	justify-content: center;
-	margin: 15%;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer {
-	height: 100px;
-	width: 200px;
+
 }
 
 /*Begin Styles for Services.html page*/
@@ -358,3 +364,10 @@ ul {
 	width: 400px;
 }
 
+@media (max-width: 800px){
+
+}
+
+@media (max-width: 500px){
+
+}
