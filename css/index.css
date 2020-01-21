@@ -50,6 +50,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+	max-width: 100%;
 }
 
 html, body {
@@ -301,12 +302,12 @@ footer {
 
 .left-box {
 	width: 450px;
-	height: 200px;
+    height: 300px;
 }
 
 .right-box{
 	width: 450px;
-	height: 200px;
+    height: 300px;
 }
 
 .right-box img {
@@ -316,17 +317,16 @@ footer {
 
 ul {
 	list-style: initial;
-	width: 150px;
-    height: 100px;
+	width: 40%
     padding: 5%;
 }
 
-/* Begin Styling for Product.HTML */
+/* Begin Styling for product.html */
 
 .product-section-one {
-	display: flex;
-    flex-wrap: wrap;
+	display: inline-flex;
 }
+
 .box{
 	border: 2px solid black;
 	margin: 3%;
@@ -334,33 +334,51 @@ ul {
 }
 
 .box-one {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 .box-two {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 .box-three {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 .box-four {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 .box-five {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 .box-six {
-	height: 200px;
-	width: 400px;
+	width: 40%;
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+	padding-bottom: 2%;
 }
 
 @media (max-width: 800px){
