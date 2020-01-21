@@ -50,8 +50,8 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	max-width: 100%;
-}
+    max-width: 100%;
+    }
 
 html, body {
     height: 100%;
@@ -70,7 +70,8 @@ h1, h2, h3, h4, h5 {
 
 nav {
     display: flex;
-    justify-content: flex-end;
+    width:100%;
+    justify-content: center;
 }
 
 
@@ -89,133 +90,66 @@ nav {
 	text-align: center;
 }
 
-header {
-	display: flex;
-	margin-top: 2%;
+/* New Services.html CSS */
+
+.nav-container{
+    display:flex;
+    flex-direction: row-reverse;
 }
 
-.header-left {
-	width: 50%;
-	display: flex;
+.wrapper-1{
+    display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.logo-header {
-	width: 50%;
-	display: flex;
-    justify-content: center;
-}
-
-h1 {
-	font-size: 75px;
-	text-align: center;
-}
-
-button {
-	font-size: 25px;
-    padding: 5px 25px;
-    display: list-item;
-}
-
-.top-content{
-	display: flex;
-	justify-content: center;
-}
-
-.features{
-	width: 48%;
-	margin: 2%;
-}
-
-.about{
-	width: 48%;
-	margin: 2%;
-}
-
-.middle-img {
-	width: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.bottom-content {
-	display: flex;
-	justify-content: center;
-}
-
-.services{
-	width: 35%;
-	margin: 1%;
-}
-
-.product {
-	width: 35%;
-	margin: 1%;
-}
-
-.vision {
-	width: 35%;
-	margin: 1%;
-}
-
-.contact {
-    display: flex;
-}
-
-.contact-div {
-	margin: 1%;
-}
-
-footer {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.footer {
-
-}
-
-/*Begin Styles for Services.html page*/
-
-#services-header {
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	margin: 2%;
 }
 
 .header-img {
-	text-align: center;
+	display: flex;
+    justify-content: center;
 }
 
 .header-content {
-	width: 61%;
+    display: flex;
+    justify-content: center;
+    width: 60%;
+    flex-direction: column;
+}
+
+.services-section-one{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services-row-1{
+    display: flex;
+}
+
+.services-row-2{
+    display: flex;
+}
+
+.services-row-3{
+    display: flex;
+}
+
+.services-section-two{
+    display: flex;
+    justify-content: center;
+}
+
+.left-box{
+    width: 40%;
+}
+
+.right-box{
+    width: 30%;
 }
 
 .header-content h1 {
 	text-align: left;
 }
 
-#section-one {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin: 2%;
-}
-
-.row-1{
-	display: flex;
-}
-
-.row-2 {
-	display: flex;
-}
-
-.row-3 {
-	display: flex;
-}
 .design {
 	height: 200px;
 	width: 450px;
@@ -300,20 +234,6 @@ footer {
 	margin: 2%;
 }
 
-.left-box {
-	width: 450px;
-    height: 300px;
-}
-
-.right-box{
-	width: 450px;
-    height: 300px;
-}
-
-.right-box img {
-	max-width: -webkit-fill-available;
-}
-
 
 ul {
 	list-style: initial;
@@ -321,148 +241,52 @@ ul {
     padding: 5%;
 }
 
-/* Begin Styling for product.html */
-
-.product-section-one {
-	display: inline-flex;
+.footer{
+    display: flex;
+    justify-content: center;
 }
 
-.box{
-	border: 2px solid black;
-	margin: 3%;
-	background-color: lightgray;
-}
-
-.box-one {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
-
-.box-two {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
-
-.box-three {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
-
-.box-four {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
-
-.box-five {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
-
-.box-six {
-	width: 40%;
-	display: flex;
-    flex-direction: column;
-	align-items: center;
-	padding-bottom: 2%;
-}
+/* media query for 800px */
 
 @media (max-width: 800px){
-	nav{
-		display:flex;
-		flex-direction: column-reverse;
-	}
-
-	.links{
-		display: flex;
-    	color: grey;
-    	justify-content: space-evenly;
-    	align-items: center;
-	}
-
-	header{
-		display: flex;
-		justify-content: center;
-	}
-
-	.logo-header{
-		display: none;
-	}
-
-	.bottom-content{
-		display: flex;
-    	justify-content: center
-	}
-	
+    nav{
+        flex-direction: column-reverse;
+        padding: 2%;
+    }
 }
+
+/* media query for 500px */
 
 @media (max-width: 500px){
-	.links{
-		flex-direction: column;
-    	align-items: center;
-	}
 
-	.links a{
-		width: 50%;
-    	text-align: center;
-		border-bottom: 1px solid black;
-		margin-bottom: 1%;
-		padding-bottom: 2%;
-	}
-
-	.header-left{
-		width: 100%;
-	}
-
-	.header-left button{
-		border: 1px solid black;
-	}
-
-	.top-content{
-		display: flex;
-    	align-items: center;
-    	flex-direction: column;
-    	justify-content: center
-	}
-
-	.features{
-		width: 100%;
-	}
-
-	.about{
-		width: 100%;
-	}
-
-	.bottom-content{
-		flex-direction: column;
-	}
-
-	.services{
-		width: 100%
-	}
-
-	.product{
-		width: 100%;
-	}
-
-	.vision{
-		width: 100%;
-	}
+.links{
+    flex-direction: column;
+    align-items: center;
 }
 
+.links a{
+    width: 50%;
+    text-align: center;
+    border-bottom: 1px solid black;
+    margin-bottom: 1%;
+    padding-bottom: 2%;
+}
 
+.services-row-1{
+    flex-direction: column;
+}
 
+.services-row-2{
+    flex-direction: column;
+}
+
+.services-row-3{
+    flex-direction: column;
+}
+
+.services-section-two{
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+}
